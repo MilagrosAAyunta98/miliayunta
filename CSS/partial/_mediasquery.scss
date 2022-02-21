@@ -1,0 +1,34 @@
+//media querys de menu
+@media (max-width: 952px) {
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:686px) {
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #499AC9;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    a {
+        font-size: 20px;
+    }
+}

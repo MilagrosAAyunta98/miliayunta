@@ -1,0 +1,148 @@
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css');
+@import "./partial/carrucel";
+@import "./partial/mediasquery";
+@import "./partial/fuentes";
+@import "./partial/galeria";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #000000, #3F80AA, #499AC9, #6DCDE5, #EDEEE4);
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 50%;
+    border: #EDEEE4;
+}
+
+/* menu */
+.menu {
+    width: 50%;
+    height: 50%;
+
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: all 0.7s ease;
+}
+
+.menu a:hover {
+    background-color: #E5E8E8;
+    color: #000000;
+    height: 50px;
+}
+
+.menu .subMenu {
+    background-color: rgb(154, 154, 250);
+    display: none;
+}
+
+.menu li:hover .subMenu {
+    display: block;
+
+}
+
+
+/* main */
+
+h2 {
+    padding: 1rem;
+    color: #EDEEE4;
+    text-align: center;
+}
+
+p {
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.border {
+    color: white;
+    background: #5b5e63;
+    margin: 0;
+    border: 10px solid #000000;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #1A1A1A;
+    height: 50%;
+    color: white;
+    padding: 15px;
+}
+
+.main1 {
+    display: flex;
+    margin: 0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}
+
+
+/* Diseño para celulares */
+.menu .contenedor {
+    float: none;
+    width: 100%;
+}
+
+/* Diseño para tabletas */
+@media screen and (min-width: 500px) {
+    .contenedor {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* Diseño para PC  */
+@media screen and (min-width: 1025px) {
+    .contenedor {
+        /* float: left; */
+        width: 100%;
+        justify-content: center;
+
+    }
+}
+
+.row {
+    text-align: start;
+}
+
+.redes img {
+    width: 5%;
+    height: 15%;
+}
